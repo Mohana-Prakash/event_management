@@ -185,6 +185,9 @@ body{
 }
 .email_card{
     width: 34%;
+    background: hsl(0deg 15% 84% / 7%);
+    padding: 2rem;
+    border-radius: 10px;
 }
 .email_button{
     width: 50%;
@@ -201,4 +204,10 @@ body{
 .map-container{
     width: 100%;
     height: 60vh;
+}
+.copyright{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
 }
