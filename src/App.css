@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+}
+.main_div{
+    background: url('assets/gallery.jpg');
+    height: 100vh;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, black, transparent);
+}
+.nav_logo{
+    width: 20%;
+}
+.nav_logo p{
+    margin: 0;
+}
+.nav_right{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+.nav_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+.nav_menu p{
+    margin: 0;
+    padding: 5px 12px;
+}
+.nav_menu p:hover{
+    background-color: turquoise;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+.nav_icons{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.content_div{
+    background: hsl(0deg 0% 0% / 52%);
+    box-shadow: 0 8px 32px rgb(0 0 0 / 30%);
+    width: 55%;
+    margin: auto;
+    border-radius: 12px;
+    padding: 50px;
+    margin-top: 8rem;
+}
+.content_div h2{
+    letter-spacing: 4px;
+    color: white;
+}
+.content_div h1{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: greenyellow;
+    margin-top: 20px;
+}
+.content_div p{
+    letter-spacing: 10px;
+    color: turquoise;
+    font-size: 17px;
+}
+.content_div button{
+    margin-top: 20px;
+    border: 1px solid mediumvioletred;
+    outline: none;
+    padding: 7px 15px;
+    border-radius: 19px;
+    background-color: mediumvioletred;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.content_div button:hover{
+    margin-top: 20px;
+    border: 1px solid mediumvioletred;
+    outline: none;
+    padding: 7px 15px;
+    border-radius: 19px;
+    background-color: white;
+    color: mediumvioletred;
+    transition: 0.5s;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
