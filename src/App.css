@@ -71,26 +71,79 @@ body{
     color: turquoise;
     font-size: 17px;
 }
-.content_div button{
+.home_button{
     margin-top: 20px;
-    border: 1px solid mediumvioletred;
-    outline: none;
-    padding: 7px 15px;
-    border-radius: 19px;
-    background-color: mediumvioletred;
-    color: white;
-    font-weight: 700;
-    letter-spacing: 2px;
+    border: 1px solid mediumvioletred !important;
+    outline: none !important;
+    padding: 7px 15px !important;
+    border-radius: 19px !important;
+    background-color: mediumvioletred !important;
+    color: white !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px !important;
 }
-.content_div button:hover{
+.home_button:hover{
     margin-top: 20px;
-    border: 1px solid mediumvioletred;
-    outline: none;
-    padding: 7px 15px;
-    border-radius: 19px;
+    border: 1px solid mediumvioletred !important;
+    outline: none !important;
+    padding: 7px 15px !important;
+    border-radius: 19px !important;
+    background-color: white !important;
+    color: mediumvioletred !important;
+    transition: 0.5s !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px !important;
+}
+.service_div{
+    padding: 3rem 0 !important;
+}
+.service_div h1{
+    margin-bottom: 3rem;
+}
+.service_cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.single_card{
     background-color: white;
-    color: mediumvioletred;
-    transition: 0.5s;
-    font-weight: 700;
-    letter-spacing: 2px;
+    color: gray;
+    display: flex;
+    padding: 1rem;
+}
+.single_card:nth-child(even) {
+    background-color: tan;
+    color: white;
+    box-shadow: 0 8px 32px rgb(0 0 0 / 30%);
+}
+.single_card:nth-child(odd) {
+    background-color: white;
+}
+.single_card h3{
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+.single_card p{
+    font-size: 14px;
+}
+.single_card2{
+    background-color: white;
+    color: gray;
+    display: flex;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.single_card2:nth-child(odd) {
+    background-color: tan;
+    color: white;
+    box-shadow: 0 8px 32px rgb(0 0 0 / 30%);
+}
+.single_card2:nth-child(even) {
+    background-color: white;
+}
+.single_card2 h3{
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+.single_card2 p{
+    font-size: 14px;
 }
