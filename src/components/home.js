@@ -29,7 +29,7 @@ function Home() {
             <div className="content_div text-center">
                 <h2>WELCOME TO</h2>
                 <h1>OUR EVENT PLANNER</h1>
-                <p>WEDDING, BIRTHDAY</p>
+                <p>WEDDING, BIRTHDAY, CORPORATE EVENTS</p>
                 <button className="btn btn-primary home_button">Get Started</button>
             </div>
         </div>

@@ -77,7 +77,7 @@ body{
     margin-top: 20px;
 }
 .content_div p{
-    letter-spacing: 10px;
+    letter-spacing: 6px;
     color: turquoise;
     font-size: 17px;
 }
@@ -133,7 +133,7 @@ body{
     width: 25%;
 }
 .single_card:nth-child(even) {
-    background-color: tan;
+    background-color: teal;
     color: white;
     box-shadow: 0 8px 32px rgb(0 0 0 / 30%);
 }
@@ -156,7 +156,7 @@ body{
     width: 25%;
 }
 .single_card2:nth-child(odd) {
-    background-color: tan;
+    background-color: teal;
     color: white;
     box-shadow: 0 8px 32px rgb(0 0 0 / 30%);
 }
@@ -242,6 +242,7 @@ body{
     color: deeppink;
     transition: 0.5s;
     font-weight: 700;
+    letter-spacing: 2px;
 }
 .serviceList1{
     padding: 0.5rem;
@@ -250,6 +251,7 @@ body{
     text-align: center;
     cursor: pointer;
     font-weight: 700;
+    letter-spacing: 2px;
 }
 
 
@@ -260,7 +262,7 @@ body{
 
 
 /* mobile responsive */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .main_div{
         height: 80vh;
     }
@@ -272,7 +274,7 @@ body{
         width: 100%;
     }
     .nav_logo p{
-        font-size: 32px;
+        font-size: 26px;
     }
     .site_logo{
         width: 20%;
@@ -311,10 +313,6 @@ body{
         margin-top: 2rem;
         word-spacing: 5px;
     }
-
-
-
-
     .services_list{
         width: 100%;
         display: flex;
@@ -344,7 +342,7 @@ body{
         border-radius: 7px;
     }
     .single_card2:nth-child(even) {
-        background-color: tan;
+        background-color: teal;
         color: white;
         box-shadow: 0 8px 32px rgb(0 0 0 / 30%);
     }
