@@ -13,9 +13,16 @@ body{
 }
 .nav_logo{
     width: 20%;
+    display: flex;
+    align-items: center;
+}
+.site_logo{
+    width: 13%;
 }
 .nav_logo p{
     margin: 0;
+    color: greenyellow;
+    font-size: 22px;
 }
 .nav_right{
     width: 46%;
@@ -123,6 +130,7 @@ body{
     color: gray;
     display: flex;
     padding: 1rem;
+    width: 25%;
 }
 .single_card:nth-child(even) {
     background-color: tan;
@@ -145,6 +153,7 @@ body{
     color: gray;
     display: flex;
     padding: 1rem;
+    width: 25%;
 }
 .single_card2:nth-child(odd) {
     background-color: tan;
@@ -210,4 +219,111 @@ body{
     color: white;
     text-align: center;
     padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* mobile responsive */
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    .nav{
+        display: block;
+    }
+    .nav_logo{
+        margin: auto;
+        width: 100%;
+    }
+    .nav_logo p{
+        font-size: 32px;
+    }
+    .site_logo{
+        width: 20%;
+    }
+    .nav_right{
+        display: none;
+        width: 100%;
+    }
+    .nav_menu{
+        width: 85% !important;
+    }
+    .content_div{
+        margin-top: 3rem;
+        width: 85%;
+    }
+    .content_div h2{
+        font-size: 16px;
+    }
+    .content_div h1{
+        font-size: 35px;
+    }
+    .content_div p {
+        letter-spacing: 5px;
+        color: turquoise;
+        font-size: 16px;
+        margin-top: 1rem;
+    }
+    .carousel_items{
+    display: block;
+    }
+    .carousel{
+        width: 100%;
+    }
+    .carousel_items p{
+        width: 100%;
+        margin-top: 2rem;
+        word-spacing: 5px;
+    }
+
+
+
+
+
+    .service_cards{
+        display: block;
+    }
+    .single_card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .single_card2{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .single_card2:nth-child(even) {
+        background-color: tan;
+        color: white;
+        box-shadow: 0 8px 32px rgb(0 0 0 / 30%);
+    }
+    .single_card2:nth-child(odd) {
+        background-color: white;
+        color: gray;
+    }
+    .footer_sections{
+        display: block;
+    }
+    .contact{
+        width: 80%;
+        margin: auto;
+    }
+    .email_card{
+        width: 100%;
+        margin-top: 3rem;
+        padding: 1rem;
+    }
+    .email_card label{
+        font-size: 18px;
+    }
+    .media_icons{
+        width: 100%;
+    }
+    .media_icons h5{
+        font-size: 30px;
+    }
 }

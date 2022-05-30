@@ -4,10 +4,16 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import EmailIcon from '@material-ui/icons/Email';
+import { toast } from 'react-toastify';
 
 function Footer() {
     const d = new Date();
     let year = d.getFullYear();
+    const handleClick = () => {
+        toast.success('Thank you for getting in touch! We appreciate you contacting us. We will get back in touch with you soon! Have a great day!', {
+            autoClose: 8000
+        })
+    }
     return (
         <>
             <div className="footer_div container-fluid">
@@ -60,7 +66,7 @@ function Footer() {
                             <input placeholder="Enter Number" class="form-control"type='number' />
                         </div>
                         <div className="email_button">
-                            <button className="btn btn-primary w-100">Contact</button>
+                            <button className="btn btn-primary w-100" onClick={handleClick}>Contact</button>
                         </div>
                     </div>
                 </div>
