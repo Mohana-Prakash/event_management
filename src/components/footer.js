@@ -15,17 +15,16 @@ function Footer() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        emailjs.sendForm('service_0r8exhn', 'template_4kekupc', form.current, 'wo71NgVYUecgLcj4x')
-            .then((result) => {
-                console.log(result.text);
-                toast.success('Thank you for getting in touch! We appreciate you contacting us. We will get back in touch with you soon! Have a great day!', {
-                    autoClose: 8000
-                })
-                document.getElementById("subscribe_form").reset();
-            }, (error) => {
-                console.log(error.text);
-            });
+        console.log(form.current)
+        // emailjs.sendForm('service_0r8exhn', 'template_4kekupc', form.current, 'wo71NgVYUecgLcj4x')
+        //     .then((result) => {
+        //         toast.success('Thank you for getting in touch! We appreciate you contacting us. We will get back in touch with you soon! Have a great day!', {
+        //             autoClose: 8000
+        //         })
+        //         document.getElementById("subscribe_form").reset();
+        //     }, (error) => {
+        //         console.log(error.text);
+        //     });
     };
 
     return (
@@ -68,21 +67,43 @@ function Footer() {
                     <div className="email_card text-light">
                         <h5 className="text-center">Contact Us</h5>
                         <form ref={form} onSubmit={sendEmail} id="subscribe_form">
-                            <div className="field mb-3" style={{display:"none"}}>
+                            <div className="field mb-3" style={{ display: "none" }}>
                                 <label>Subject</label>
-                                <input type="text" name="subject" value='Madha Events'/>
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    value='Madha Events'
+                                />
                             </div>
                             <div className="field mb-3">
                                 <label>Name</label>
-                                <input type="text" name="name" class="form-control" placeholder="Enter Name" />
+                                <input
+                                    type="text"
+                                    name="name"
+                                    class="form-control"
+                                    placeholder="Enter Name"
+                                    required
+                                />
                             </div>
                             <div className="field mb-3">
                                 <label>Email</label>
-                                <input type="email" name="email" class="form-control" placeholder="Enter Email" />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="Enter Email"
+                                    required
+                                />
                             </div>
                             <div className="field mb-3">
                                 <label>Name</label>
-                                <input type="number" name="phone_number" class="form-control" placeholder="Enter Number" />
+                                <input
+                                    type="number"
+                                    name="phone_number"
+                                    class="form-control"
+                                    placeholder="Enter Number"
+                                    required
+                                />
                             </div>
                             <div className="email_button">
                                 <button type='submit' className="btn btn-primary w-100">Contact</button>
