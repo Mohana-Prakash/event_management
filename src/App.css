@@ -296,10 +296,12 @@ body{
     .single_card{
         width: 100%;
         margin-bottom: 20px;
+        border-radius: 7px;
     }
     .single_card2{
         width: 100%;
         margin-bottom: 20px;
+        border-radius: 7px;
     }
     .single_card2:nth-child(even) {
         background-color: tan;
