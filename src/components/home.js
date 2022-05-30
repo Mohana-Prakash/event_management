@@ -12,13 +12,7 @@ function Home() {
                     <div className='site_logo'><img className='w-100' src={Logo} /></div>
                     <p className='ml-3'>MADHA EVENTS</p>
                 </div>
-                <MenuIcon
-                    data-toggle="collapse"
-                    href="#collapseExample"
-                    aria-expanded="false"
-                    aria-controls="collapseExample"
-                />
-                <div className="nav_right collapseExample">
+                <div className="nav_right">
                     <div className="nav_menu">
                         <p>Home</p>
                         <p>About</p>
