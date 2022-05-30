@@ -223,8 +223,34 @@ body{
 .mobcoll.collapse:not(.show) {
     display: block !important;
 }
-
-
+.services_list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: powderblue;
+    padding: 0.3rem;
+    border-radius: 7px;
+}
+.serviceList{
+    padding: 0.5rem;
+    margin: 0;
+    background-color: white;
+    border-radius: 7px;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    color: deeppink;
+    transition: 0.5s;
+    font-weight: 700;
+}
+.serviceList1{
+    padding: 0.5rem;
+    margin: 0;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+}
 
 
 
@@ -289,7 +315,21 @@ body{
 
 
 
-
+    .services_list{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: powderblue;
+        padding: 0.3rem;
+        border-radius: 7px;
+        flex-wrap: wrap;
+    }
+    .serviceList{
+        width: 48%;
+    }
+    .serviceList1{
+        width: 48%;
+    }
     .service_cards{
         display: block;
     }

@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import Service from "./components/service";
 import AboutUs from "./components/aboutUs";
 import Home from './components/home'
+import Gallery from "./components/gallery";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Home/>
       <AboutUs />
       <Service />
+      <Gallery/>
       <GoogleMaps />
       <Footer />
     </>

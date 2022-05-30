@@ -8,8 +8,7 @@ function AboutUs() {
             src: 'https://external-preview.redd.it/IVShPk3qXszXr4YWddb4-9nIQPCO4-q5m6ajalzFaUA.jpg?auto=webp&s=e33f3d91033839b2a58b01d04853151508c2da5f'
         },
         {
-            src: eventWallpaper,
-            description: "Hello World!"
+            src: eventWallpaper
         }
     ]
     return (
