@@ -236,7 +236,7 @@ body{
 /* mobile responsive */
 @media screen and (min-width: 375px) and (max-width: 767px) {
     .main_div{
-        height: 90vh;
+        height: 80vh;
     }
     .nav{
         display: block;
