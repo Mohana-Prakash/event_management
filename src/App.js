@@ -6,14 +6,16 @@ import Service from "./components/service";
 import AboutUs from "./components/aboutUs";
 import Home from './components/home'
 import Gallery from "./components/gallery";
+import Nav from "./components/nav";
 
 function App() {
   return (
     <>
-      <Home/>
+      <Nav />
+      <Home />
       <AboutUs />
       <Service />
-      <Gallery/>
+      <Gallery />
       <GoogleMaps />
       <Footer />
     </>
