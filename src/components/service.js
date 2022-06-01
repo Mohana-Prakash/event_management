@@ -3,7 +3,7 @@ import CakeIcon from '@material-ui/icons/Cake';
 
 function Service() {
     return (
-        <div className="container-fluid mt-4" style={{ backgroundColor: "#f5f5f5" }}>
+        <div id="service" className="container-fluid mt-4" style={{ backgroundColor: "#f5f5f5" }}>
             <div className="service_div">
                 <h1 className="text-center m-0">What <b>We Do</b></h1>
                 <hr style={{ width: "10%", border: "2px solid tan", margin: "10px auto 0" }}></hr>

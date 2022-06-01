@@ -1,7 +1,5 @@
 import React from 'react'
 
-import MenuIcon from '@material-ui/icons/Menu';
-
 function Home() {
     function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -12,7 +10,7 @@ function Home() {
         }
     }
     return (
-        <div className="main_div">
+        <div className="main_div" id="home">
             {/* <div className="nav p-3">
                 <div className="nav_logo text-light">
                     <div className='site_logo'><img className='w-100' src={Logo} /></div>

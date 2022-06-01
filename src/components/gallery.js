@@ -23,7 +23,7 @@ function AboutUs() {
         setIndex(i)
     }
     return (
-        <div className="container mt-4">
+        <div id="gallery" className="container mt-4">
             <h1 className="text-center">Galleries</h1>
             <hr style={{ width: "10%", border: "2px solid tan", margin: "10px auto 0" }}></hr>
             <div className='services_list mt-3'>
