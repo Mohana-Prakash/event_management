@@ -4,7 +4,8 @@ import eventWallpaper from '../assets/event_wallpaper.jpg'
 
 function AboutUs() {
     const [index, setIndex] = useState(0)
-    const services = ['Wedding',
+    const services = [
+        'Wedding',
         'Birthday',
         'Entertainment',
         'Corporate',

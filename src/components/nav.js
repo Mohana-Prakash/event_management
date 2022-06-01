@@ -5,42 +5,11 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import { Link } from 'react-scroll'
 
 function Nav() {
+
     const [index, setIndex] = useState(0)
-    const menuArr = [
-        {
-            'menuName': "Home",
-            'spy': 'true',
-            'smooth': 'true',
-            'to': "home"
-        },
-        {
-            'menuName': "About",
-            'spy': 'true',
-            'smooth': 'true',
-            'to': "about"
-        },
-        {
-            'menuName': "Service",
-            'spy': 'true',
-            'smooth': 'true',
-            'to': "service"
-        },
-        {
-            'menuName': "Contact",
-            'spy': 'true',
-            'smooth': 'true',
-            'to': "contact"
-        },
-        {
-            'menuName': "Gallery",
-            'spy': 'true',
-            'smooth': 'true',
-            'to': "gallery"
-        },
-    ]
+    const menuArr = ["Home", "About", "Service", "Contact", "Gallery"]
 
     const menuHandler = (e, i) => {
-        console.log(e, i);
         setIndex(i)
     }
 
@@ -56,12 +25,12 @@ function Nav() {
                             return (
                                 <li className={index === i && 'menu_select'}>
                                     <Link
-                                        onClick={() => { menuHandler(e, i) }}
-                                        to={e.to}
-                                        spy={e.spy}
-                                        smooth={e.smooth}
+                                        onClick={() => menuHandler(e, i)}
+                                        to={e.toLowerCase()}
+                                        spy={true}
+                                        smooth={true}
                                     >
-                                        {e.menuName}
+                                        {e}
                                     </Link>
                                 </li>
                             )
