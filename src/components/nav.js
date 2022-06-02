@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Logo from '../assets/logo.png'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 import { Link } from 'react-scroll'
 
 function Nav() {
@@ -36,8 +37,9 @@ function Nav() {
                             )
                         })
                     }
-                    <li><a href="https://www.facebook.com/" target="_blank"><FacebookIcon /></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><InstagramIcon /></a></li>
+                    <li><a href='https://www.facebook.com/Madha-Events-209732471066545/' target="_blank"><FacebookIcon /></a></li>
+                    <li><a href='https://instagram.com/madhaevents?igshid=YmMyMTA2M2Y=' target="_blank"><InstagramIcon /></a></li>
+                    <li><a href='https://youtube.com/channel/UCMFk_H6DMXHiFXRjLFU6D0w' target="_blank"><YouTubeIcon /></a></li>
                 </div>
             </ul>
         </nav>

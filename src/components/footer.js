@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import EmailIcon from '@material-ui/icons/Email';
@@ -39,24 +40,24 @@ function Footer() {
                             <LocationOnIcon />
                             <div className="ml-3">
                                 <h5>Address</h5>
-                                <p className="m-0">No.6, Vinayagar Koil Street</p>
-                                <p className="m-0">Kamarajar Road, 5th Stop</p>
-                                <p className="m-0">Thirunagar, Maadurai - 625006</p>
+                                <p className="m-0">No.6</p>
+                                <p className="m-0">Sahaya Annai Complex</p>
+                                <p className="m-0">Anjal Nagar, Madurai-625018</p>
                             </div>
                         </div>
                         <div className="d-flex card_single_card">
                             <PhoneIphoneIcon />
                             <div className="ml-3">
                                 <h5>Phone</h5>
-                                <p className="m-0">+91 97376 78623</p>
-                                <p className="m-0">+91 97376 78623</p>
+                                <p className="m-0">+91 99943 89542</p>
+                                <p className="m-0">+91 98428 05942</p>
                             </div>
                         </div>
                         <div className="d-flex card_single_card">
                             <EmailIcon />
                             <div className="ml-3">
                                 <h5>Email</h5>
-                                <p className="m-0">iasmohan96@gmail.com</p>
+                                <p className="m-0">madhaevents@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -108,15 +109,22 @@ function Footer() {
                     </div>
                     <div className="media_icons text-center">
                         <h5>Get in touch</h5>
-                        <FacebookIcon style={{ fontSize: "35px" }} />
-                        <InstagramIcon className="ml-3" style={{ fontSize: "35px" }} />
+                        <a href='https://www.facebook.com/Madha-Events-209732471066545/' target="_blank">
+                            <FacebookIcon style={{ fontSize: "35px", color:"white" }} />
+                        </a>
+                        <a href='https://instagram.com/madhaevents?igshid=YmMyMTA2M2Y=' target="_blank" >
+                            <InstagramIcon className="ml-3" style={{ fontSize: "35px", color:"white" }} />
+                        </a>
+                        <a href='https://youtube.com/channel/UCMFk_H6DMXHiFXRjLFU6D0w' target="_blank">
+                            <YouTubeIcon className="ml-3" style={{ fontSize: "35px", color:"white" }} />
+                        </a>
                     </div>
                 </div>
             </div>
             <div className='copyright position-relative'>
                 <p className='m-0 text-center'>© {year} <b style={{ color: "green" }}>Madha Events</b>. All Rights Reserved</p>
                 <Link to="home" spy={true} smooth={true}><div className='position-absolute up_arrow'><ExpandLessIcon style={{ fontSize: "30px" }} /></div></Link>
-        </div>
+            </div>
         </>
     )
 }
